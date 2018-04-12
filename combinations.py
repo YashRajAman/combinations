@@ -72,9 +72,10 @@ class main():
                     wordlist_in.append(self.word[i]+self.wordlist[j])
                     self.full_list.append(self.word[i]+self.wordlist[j])
                     self.count += 1
+                    #######both the control statement are executing. :(
                     if(self.show_button):
                         self.scrolltext.insert(tk.END, self.word[i]+self.wordlist[j]+"\n")
-                    elif(self.count_button > 0):
+                    elif(self.count_button):
                         self.scrolltext.delete(1.0, END)
                         self.scrolltext.insert(tk.END, str(self.count))
                 else:
